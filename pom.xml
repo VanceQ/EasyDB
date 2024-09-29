@@ -57,7 +57,7 @@
 <!--          </execution>-->
 <!--        </executions>-->
 <!--        <configuration>-->
-<!--          <mainClass>top.guoziyang.mydb.backend.Launcher</mainClass>-->
+<!--          <mainClass>it.shixiaobo.easydb.backend.Launcher</mainClass>-->
 <!--        </configuration>-->
       </plugin>
 
