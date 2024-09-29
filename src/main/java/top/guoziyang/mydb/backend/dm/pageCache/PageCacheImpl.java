@@ -42,6 +42,7 @@ public class PageCacheImpl extends AbstractCache<Page> implements PageCache {
         this.pageNumbers = new AtomicInteger((int)length / PAGE_SIZE);
     }
 
+
     public int newPage(byte[] initData) {
         int pgno = pageNumbers.incrementAndGet();
         Page pg = new PageImpl(pgno, initData, null);

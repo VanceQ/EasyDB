@@ -1,10 +1,11 @@
 package top.guoziyang.mydb.backend.common;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
 import top.guoziyang.mydb.common.Error;
 
 /**
@@ -60,7 +61,6 @@ public abstract class AbstractCache<T> {
             lock.unlock();
             break;
         }
-
         T obj = null;
         try {
             obj = getForCache(key);
